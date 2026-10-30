@@ -21,7 +21,7 @@ header{
     background-color: rgba(93, 38, 219, 0.575);
 }
 .contiener1{
-    background-color: rgb(179, 135, 221);
+    background-color: red;
     font-size: clamp(0.813rem, calc(0.722rem + 0.455vw), 1.063rem);
     padding: 6px 0;
     z-index: 1;
@@ -271,7 +271,7 @@ header{
     .details-my-jops{grid-template-columns: repeat(1,1fr);} 
 }
 @media (max-width: 560px){
-    .top-nav{width: 89%;}
+    .top-nav{width: 95%;}
     .contiener4{flex-direction: column-reverse;}
     .contiener4-right{width: 90%;}
     .contiener4-left{width: 100%;padding-bottom: 20px;}
