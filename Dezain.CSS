@@ -196,7 +196,7 @@ header{
 }
 .my-life{
     color: white;
-    font-size: clamp(1rem,1.8vw,1.5rem);
+    font-size: clamp(1rem,.2vw,1.5rem);
 }
 .information{
      display: flex;
@@ -239,10 +239,10 @@ header{
     line-height: 1.9rem;
     border-radius: 20px;
 }
-.jops0 i , h3{
+.jops0 i , .jops0 h2{
     width: 100%;
     text-align: center;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     color: blue;
 }
 .jops0 ul li{
