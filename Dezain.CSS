@@ -14,8 +14,8 @@ ul li{
     list-style: none;
 }
 header{
-    min-width: 100%;
-    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: rgba(93, 38, 219, 0.575);
@@ -32,10 +32,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2px 4px;
+    gap: 0 3px 0 0;
 }
 .top-nav-right span{
-    margin: 0 5px ;
+    margin: 0 1px ;
 }
 .top-nav-right span, a{
     color: white;
@@ -271,8 +271,7 @@ header{
     .details-my-jops{grid-template-columns: repeat(1,1fr);} 
 }
 @media (max-width: 560px){
-    .top-nav{ gap: 2px 3px; }
-    .top-nav-right span{ margin: 0 3px; }
+    .top-nav{width: 85%;}
     .contiener4{flex-direction: column-reverse;}
     .contiener4-right{width: 90%;}
     .contiener4-left{width: 100%;padding-bottom: 20px;}
