@@ -25,7 +25,6 @@ header{
     font-size: clamp(0.813rem, calc(0.722rem + 0.455vw), 1.063rem);
     padding: 6px 0;
      z-index: 1;
-
 }
 .top-nav{
     width: 80%;
@@ -33,7 +32,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;          
     gap: 2px 10px;
 }
 .top-nav-right span{
@@ -45,9 +43,9 @@ header{
 .contiener2{
     width: 100%;
     background-color: rgb(4, 0, 255);
-     padding: 2px 0;
-     position:fixed;
-     top: 31px;
+    padding: 2px 0;
+    position:fixed;
+    top: 31px;
 }
 .down-nav{
     display: flex;
@@ -56,7 +54,6 @@ header{
     gap: .5rem 1rem;
     width: 80%;
     margin: auto;
-
 }
 .down-nav-right{
     display: flex;
@@ -76,7 +73,7 @@ header{
     justify-content:center;
     align-items: center;
     gap: .65rem 1rem;
- font-size: clamp(0.90rem, calc(0.90rem + 0.455vw), 1.25rem);
+    font-size: clamp(0.90rem, calc(0.90rem + 0.455vw), 1.25rem);
 }
 .down-nav-left {
     background-color: rgba(50, 250, 0, 0.808);
@@ -156,18 +153,13 @@ header{
     font-size: clamp(1.000rem, calc(.99rem + 0.227vw), 1.125rem);
     border: 3px solid red;
 }
-
-
-
-section{
-width: 100%;
-min-height:100vh;
-background-color: brown;
-display: flex;
+.section1{
+    width: 100%;
+    min-height:100vh;
+    background-color: brown;
+    display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 .contiener4{
     width: 80%;
@@ -182,24 +174,20 @@ display: flex;
     height: 50% ;
     display: flex;
     justify-content: center;
-    align-items: center;
-  
+    align-items: center; 
 }
 .contiener4-right img{
     width: 200px;
     height: 60%;
     box-shadow: .2rem .2rem .2rem .2rem rgba(226, 126, 126, 0.692);
-    border-radius: 25px;
- 
+    border-radius: 25px; 
 }
 .contiener4-left{
     width: 50%;
-        height: 50% ;
+    height: 50% ;
     display: flex;
     flex-direction: column;
     gap: 1.2REM;
-    
-
 }
 .i-am{
     font-weight: 700;
@@ -207,16 +195,15 @@ display: flex;
     font-size: clamp(1rem,1.6vw,1.5rem);
 }
 .my-life{
-        color: white;
-          font-size: clamp(1rem,1.8vw,1.5rem);
-
+    color: white;
+    font-size: clamp(1rem,1.8vw,1.5rem);
 }
 .information{
      display: flex;
     flex-direction: column;
     line-height: 1.5rem;
     gap: 1REM;
-        font-size: clamp(1rem,1.8vw,1.4rem);
+    font-size: clamp(1rem,1.8vw,1.4rem);
 
 }
 .contiener4-left ul li{
@@ -224,98 +211,73 @@ display: flex;
     list-style-position: inside;
     font-weight: 600;
     line-height: 1.9rem;
-    
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.section2{
+    width: 100%;
+    min-height:85vh;
+    background-color: rgba(46, 34, 216, 0.479);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contiener5{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     gap: 1rem;
+     margin: 1.5rem;
+}
+.details-my-jops{
+    gap: .8rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.jops0{
+    background-color: rgba(215, 215, 231, 0.699);
+    padding:1rem 1rem 1rem .5rem;
+    line-height: 1.9rem;
+    border-radius: 20px;
+}
+.jops0 i , h3{
+    width: 100%;
+    text-align: center;
+    font-size: 1.15rem;
+    color: blue;
+}
+.jops0 ul li{
+    list-style: circle;
+    list-style: inside;
+    padding: 0 .6rem;
+}
 
 
 
 
 @media (max-width: 1075px){
-    .top-nav, .down-nav, .main{ width: 92%; }
-     .contiener3{
-   padding-top: 120px;
-  }
+    .top-nav, .down-nav, .main{width: 92%;}
+    .contiener3{padding-top: 120px;}
 }
 @media (max-width: 700px){
-    .down-nav {
-    flex-wrap: wrap; 
-    gap: 0;   
-  }
-  .down-nav-right {
-    flex:100%;
-    text-align: center; 
-    justify-content: center;
-  }
-  .down-nav-meduim {
-    flex: 1; /* يأخذ المساحة المتاحة */
-    display: flex;
-    justify-content: flex-start;
-  }  
-
-  .down-nav-meduim ul {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .down-nav-left {
-    font-size: clamp(0.75rem, calc(0.6rem + 0.50vw), 1rem);
-    padding: 6.5px 12.5px; 
+    .down-nav {flex-wrap: wrap; gap: 0;}
+    .down-nav-right {flex:100%;text-align: center; justify-content:center;}
+    .down-nav-meduim {flex: 1;display: flex;justify-content:flex-start;}  
+    .down-nav-meduim ul {display: flex;gap: 15px;list-style: none;padding: 0;margin: 0;}
+    .down-nav-left {font-size: clamp(0.75rem, calc(0.6rem + 0.50vw), 1rem);padding: 6.5px 12.5px; }
+    .contiener3{padding-top: 130px;}
+    .main div:last-of-type{padding-bottom:40px;}
+    .contiener4-right{width: 25%;}
+    .i-am{padding-top: 25px;}
+    .details-my-jops{grid-template-columns: repeat(1,1fr);} 
 }
-  .contiener3{
-   padding-top: 130px;
-  }
-
-  .main div:last-of-type{
-    padding-bottom:40px;
-    
-}
-    .contiener4-right{
-    width: 25%;
-}
-.i-am{
-    padding-top: 25px;
-}
-  
-}
-
 @media (max-width: 560px){
-.contiener4{
-    flex-direction: column-reverse;
-}
-.contiener4-right{
-    width: 90%;
-}
-.contiener4-left{
-    width: 100%;
-    padding-bottom: 20px;
-}
-
+    .contiener4{flex-direction: column-reverse;}
+    .contiener4-right{width: 90%;}
+    .contiener4-left{width: 100%;padding-bottom: 20px;}
 }
 @media (max-width: 375px){
     .contiener1{display: none; }
     .contiener2{top: 0; }
-
 }
 @media (max-width: 300px){
     .main div:last-of-type{justify-content: center;}
