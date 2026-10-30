@@ -15,14 +15,14 @@ ul li{
 }
 header{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: rgba(93, 38, 219, 0.575);
 }
 .contiener1{
     background-color: red;
-    font-size: clamp(0.813rem, calc(0.722rem + 0.455vw), 1.063rem);
+    font-size: clamp(0.75rem, calc(0.70rem + 0.40vw), 1rem);
     padding: 6px 0;
     z-index: 1;
 }
@@ -32,7 +32,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0 3px 0 0;
+    gap: 2px;
 }
 .top-nav-right span{
     margin: 0 1px ;
