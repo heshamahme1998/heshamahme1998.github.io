@@ -199,7 +199,7 @@ header{
     font-size: clamp(1rem,.2vw,1.5rem);
 }
 .information{
-     display: flex;
+    display: flex;
     flex-direction: column;
     line-height: 1.5rem;
     gap: 1REM;
@@ -226,7 +226,7 @@ header{
     flex-direction: column;
     align-items: center;
      gap: 1rem;
-     margin: 1.5rem;
+     margin: 1.2rem;
 }
 .details-my-jops{
     gap: .8rem;
@@ -266,12 +266,12 @@ header{
     .down-nav-left {font-size: clamp(0.75rem, calc(0.6rem + 0.50vw), 1rem);padding: 6.5px 12.5px; }
     .contiener3{padding-top: 130px;}
     .main div:last-of-type{padding-bottom:40px;}
-    .contiener4-right{width: 25%;}
+    .contiener4-right{width: 25%; margin-bottom: 2rem;}
     .i-am{padding-top: 25px;}
     .details-my-jops{grid-template-columns: repeat(1,1fr);} 
 }
 @media (max-width: 560px){
-    .top-nav{width: 85%;}
+    .top-nav{width: 89%;}
     .contiener4{flex-direction: column-reverse;}
     .contiener4-right{width: 90%;}
     .contiener4-left{width: 100%;padding-bottom: 20px;}
