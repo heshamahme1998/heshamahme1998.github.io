@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: none;
+}
 a{
     text-decoration: none;
     transition: all .5s ease ;
@@ -21,7 +24,6 @@ header{
     background-color: rgba(93, 38, 219, 0.575);
 }
 .contiener1{
-    background-color: red;
     font-size: clamp(0.75rem, calc(0.70rem + 0.40vw), 1rem);
     padding: 6px 0;
     z-index: 1;
@@ -34,9 +36,6 @@ header{
     align-items: center;
     gap: 2px;
 }
-.top-nav-right span{
-    margin: 0 1px ;
-}
 .top-nav-right span, a{
     color: white;
 }
@@ -45,7 +44,7 @@ header{
     background-color: rgb(4, 0, 255);
     padding: 2px 0;
     position:fixed;
-    top: 31px;
+    top: 28.9px;
 }
 .down-nav{
     display: flex;
@@ -192,11 +191,14 @@ header{
 .i-am{
     font-weight: 700;
     color: rgb(67, 231, 2);
-    font-size: clamp(1rem,1.6vw,1.5rem);
+    font-size: clamp(1.5rem,3vw,2rem);
+    text-align: center;
 }
 .my-life{
     color: white;
     font-size: clamp(1rem,.2vw,1.5rem);
+        text-align: center;
+
 }
 .information{
     display: flex;
