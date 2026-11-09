@@ -169,24 +169,28 @@ header{
     
 }
 .main a:first-of-type{
-    width: fit-content;
-    padding: 1.2rem;
-    display: flex;
-    align-items: center;
+    padding: .5rem 1rem;
+    align-content: center;
     border-radius: 20px;
-    font-size: clamp(1.000rem, calc(.99rem + 0.227vw), 1.125rem);
-        background: var(--teal);
+    background: var(--teal);
+    color: #fff;
+
 }
 .main a:last-of-type{
-    width: fit-content;
-    padding: 1.2rem;
-    display: flex;
-    align-items: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: .5rem 1rem;
+    align-content: center;
     border-radius: 20px;
-    font-size: clamp(1.000rem, calc(.99rem + 0.227vw), 1.125rem);
-        border: 1.5px solid rgba(255, 255, 255, 0.5);
-        color: #fff;
 }
+.main a:first-of-type:hover{
+    background: #00645e;
+    color: #fd0000;
+}
+.main a:last-of-type:hover{
+    color: #fd0000;
+}
+
 .section1{
     width: 100%;
     min-height:100vh;
@@ -229,11 +233,10 @@ header{
     text-align: center;
 }
 .my-life{
-        color: var(--navy);
+    color: var(--navy);
     font-size: clamp(1rem,.2vw,1.5rem);
-        text-align: center;
+    text-align: center;
     font-weight: 800;
-
 }
 .information{
     display: flex;
@@ -278,7 +281,7 @@ header{
     border-radius: var(--radius);
     color: var(--text-dim);
 }
-.jops0 i , .jops0 h2{
+.jops0 i , .jops0 h3{
     width: 100%;
     text-align: center;
     font-size: 1.25rem;
@@ -309,34 +312,33 @@ header{
     justify-content: start;
     gap: 15px;
     border: 2.5px solid rgba(207, 195, 195, 0.5);
-    line-height: 2.2rem;
+    line-height: 2rem;
     padding: 1rem;
     border-radius: 12px;
 }
-.work-time{
-    white-space: nowrap;
-    margin: 5px;
-    font-size:14px
 
-}
-.work-time p{
+.work-time{
     background: var(--bg);
     border: 1px solid var(--line);
     padding: 3px 12px;
     border-radius:10px;
     font-weight: 600;
+    height: fit-content;
+    white-space: nowrap;
+    margin: 5px;
+    font-size:13px
 }
-.work-detials h3:first-of-type{
+.work-detials h4{
     font-size: 1.08rem;
     color: var(--navy);
     
 }
-.work-detials h3:last-of-type{
+.work-detials h5{
    color: var(--teal);
     font-weight: 600;
 }
 .work-detials ul li{
-        color: var(--text-dim);
+    color: var(--text-dim);
     list-style:inside
 }
 .section4{
@@ -474,6 +476,9 @@ background: var(--navy);    color: white;
     justify-content: space-between;
     gap:1rem;
 }
+.contiener8 hr{
+    display: none;
+}
 
 
 
@@ -499,7 +504,7 @@ background: var(--navy);    color: white;
     .down-nav-right {flex:100%;text-align: center; justify-content:center;}
     .down-nav-meduim {flex: 1;display: flex;justify-content:flex-start;}  
     .down-nav-meduim ul {display: flex;gap: 15px;list-style: none;padding: 0;margin: 0;}
-    .down-nav-left {font-size: clamp(0.75rem, calc(0.6rem + 0.50vw), 1rem);padding: 6.5px 12.5px; }
+    .down-nav-left {font-size: clamp(0.75rem, calc(0.6rem + 0.50vw), 1rem);padding: 5.5px 12.5px; }
     .contiener3{padding-top: 120px;}
     .main div:last-of-type{padding-bottom:40px;}
     .contiener4-right{width: 25%; margin-bottom: 2rem;}
@@ -507,10 +512,9 @@ background: var(--navy);    color: white;
     .details-my-jops{grid-template-columns: repeat(1,1fr);}
     .contiener6{gap:5px;margin: -2px 0 1rem 0;width: 95%;}
     .work{flex-direction: column;gap: 1px;line-height: 1.8rem;padding: .5rem 2.9rem;border-radius: 15px;}
-    .work-time{text-align: center;}
-    .work-time p{padding: 8px 20px;border-radius: 10px; display: inline;}
-    .work-detials h3:first-of-type{text-align:center;}
-    .work-detials h3:last-of-type{text-align: center;}
+    .work-time{ text-align: center;padding: 8px 20px;border-radius: 10px; display: inline;}
+    .work-detials h4{text-align:center;}
+    .work-detials h5{text-align: center;}
     .work-detials ul li{color: #5C7480;list-style:circle;list-style: inside;}
     .contiener7{width: 95%;}
     .contiener8{width: 90%;flex-wrap: wrap;justify-content: space-between;}  
@@ -540,6 +544,11 @@ background: var(--navy);    color: white;
 @media (max-width: 375px){
     .contiener1{display: none; }
     .contiener2{top: 0; }
+    .contiener8 hr{display:block; width: 1px;
+    height: 150px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    align-self: center;}
 }
 @media (max-width: 300px){
     .main div:last-of-type{justify-content: center;}
